@@ -75,6 +75,8 @@ head(profile='http://gmpg.org/xfn/11')
     link(rel='canonical', href='http://es.crossfire.z8games.com/guias/rangos/')
     link(rel='shortlink', href='http://es.crossfire.z8games.com/?p=416')
     meta(name='generator', content='Powered by Visual Composer - drag and drop page builder for WordPress.')
+
+    link(href="css/newStyles.css", rel="stylesheet")
   body
     #sub-wrapper
       #container.subcontainer
@@ -213,39 +215,55 @@ head(profile='http://gmpg.org/xfn/11')
               .wpb_wrapper
                 .dt-module.dt-post-content.dt-style-subpage
                   .dt-content-container
-                    ul.tabs
-                      li: a(href="#") Soldados
-                      li: a(href="#") Suboficial
-                      li: a(href="#") Oficial De Compañía
-                      li: a(href="#") Oficial De Campo
-                      li: a(href="#") General
-                  .table
-                    .table-header
-                      .th Simbolo / Clasificacion
-                      .th Suboficial
-                      .th Bonus
-                    .table-body
-                      .table-row
-                        .table-cell
-                          img(src="")
-                          .meta Reculta 1
-                        .table-cell -
-                        .table-cell -
-                      .table-row
-                        .table-cell
-                          img(src="")
-                          .meta Cadete
-                        .table-cell 913
-                        .table-cell Bonificion Por Nuevo Rango: 10,000 GP
+                    .dt-content-before
+                      .dt-content-before-left
+                      .dt-content-before-center
+                      .dt-content-before-right
+                    .dt-content
+                      .dt-module-title
+                        .title Rangos
+                      .dt-post-content-container
+                        .wpb_row.vc_row-fluid
+                          .wpb_wrapper
+                            //Carlos New HTML/CSS Static Markup
+
+                            ul.tabs
+                              li.tab.active: a.tab-link(href="#") Soldados
+                              li.tab: a.tab-link(href="#") Suboficial
+                              li.tab: a.tab-link(href="#") Oficial De Compañía
+                              li.tab: a.tab-link(href="#") Oficial De Campo
+                              li.tab.last: a.tab-link(href="#") General
+                            table.table-ranks
+                              thead
+                                th Simbolo / Clasificacion
+                                th Suboficial
+                                th.last Bonus
+                              tbody
+                                tr
+                                  td Reculta 1
+                                    img.ranks-symbol(src="img/class_1.jpg")
+                                    
+                                  td -
+                                  td -
+                                tr
+                                  td Cadete
+                                    img.ranks-symbol(src="img/class_2.jpg")
+                                    
+                                  td 913
+                                  td Bonificion Por Nuevo Rango: 10,000 GP
+                                tr
+                                  td Cadete
+                                    img.ranks-symbol(src="img/class_3.jpg")
+                                  td 913
+                                  td SUUUUU LEE                       
 
 
 
-
-        //
-           Close #content
+        // Close #content
+          
         #after-content
-      //
-         Close #container
+      // Close #container
+         
       footer#footer
         .footer-navigation
           ul#menu-main-navigation-menu-1.menu

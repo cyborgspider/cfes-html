@@ -49,7 +49,7 @@ module.exports =function(grunt){
             import:['nib']
           },
           files: {
-            'build/css/styles.css': ['site/styles/*.styl'] // compile and concat into single file
+            'build/css/newStyles.css': ['site/styles/*.styl'] // compile and concat into single file
           }
         }
 
