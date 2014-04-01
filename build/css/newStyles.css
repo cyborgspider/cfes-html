@@ -1,16 +1,89 @@
-.tabs{display:block;border-bottom:solid 2px #341f10;float:left;overflow:hidden}
-.tab{float:left;height:37px;line-height:37px;border-top:solid 2px transparent;margin-right:1px;background:#050505;font-size:14px;width:167px;text-align:center;}
-.tab:hover{background:#341f10}
-.tab.active{background:#341f10;border-top-color:#e66415}
-.tab.last{margin-right:0}
-.tab-link{color:#909090;width:100%;height:100%;display:block;text-decoration:none;}
-.active  .tab-link{color:#e66415}
-.table-ranks{width:100%;}
-.table-ranks th{border-bottom:solid 1px #341f10;font-size:13px;padding:12px;color:#583216;position:relative;vertical-align:middle;}
-.table-ranks th:after{content:'';width:1px;height:22px;background:#341f10;top:8px;right:0;position:absolute}
-.table-ranks th.last:after{display:none}
-.table-ranks td{font-size:12px;padding:7px 12px;position:relative;border-bottom:solid 1px #130b06;vertical-align:middle;}
-.table-ranks td.ac{text-align:center}
-.table-ranks td:after{content:'';height:1px;width:100%;background:#1c1c1c;position:absolute;bottom:-2px;left:0}
-.ranks-symbol{vertical-align:middle}
-.ranks-title{display:inline;margin-left:20px}
+.dt-post-content {
+  font-family: 'Open Sans';
+}
+.tabs {
+  display: block;
+  border-bottom: solid 2px #341f10;
+  float: left;
+  overflow: hidden;
+}
+.tab {
+  float: left;
+  height: 37px;
+  line-height: 37px;
+  border-top: solid 2px transparent;
+  margin-right: 1px;
+  background: #050505;
+  font-size: 14px;
+  width: 167px;
+  text-align: center;
+}
+.tab:hover,
+.tab.active {
+  background: #341f10;
+  border-top-color: #e66415;
+}
+.tab.last {
+  margin-right: 0;
+}
+.tab-link {
+  color: #909090;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.active  .tab-link,
+.tab:hover .tab-link {
+  color: #e66415;
+}
+.table-ranks {
+  width: 100%;
+}
+.table-ranks th {
+  border-bottom: solid 1px #341f10;
+  font-size: 13px;
+  padding: 12px;
+  color: #583216;
+  position: relative;
+  vertical-align: middle;
+}
+.table-ranks th:after {
+  content: '';
+  width: 1px;
+  height: 22px;
+  background: #341f10;
+  top: 8px;
+  right: 0;
+  position: absolute;
+}
+.table-ranks th.last:after {
+  display: none;
+}
+.table-ranks td {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 12px;
+  position: relative;
+  border-bottom: solid 1px #130b06;
+  vertical-align: middle;
+}
+.table-ranks td.ac {
+  text-align: center;
+}
+.table-ranks td:after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #1c1c1c;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.ranks-symbol {
+  vertical-align: middle;
+}
+.ranks-title {
+  display: inline;
+  margin-left: 20px;
+}

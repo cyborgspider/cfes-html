@@ -4,6 +4,9 @@ $brown-bg   = #341f10
 $brown-text = #583216
 $gray       = #909090
 
+.dt-post-content
+  font-family 'Open Sans'
+
 .tabs
   display       block
   border-bottom solid 2px $brown-bg
@@ -20,7 +23,6 @@ $gray       = #909090
   width        167px
   text-align   center
   &:hover
-    background $brown-bg
   &.active
     background       $brown-bg
     border-top-color $orange
@@ -35,6 +37,7 @@ $gray       = #909090
   display         block
   text-decoration none
   .active  &
+  .tab:hover &
     color $orange
 
 .table-ranks
@@ -58,6 +61,7 @@ $gray       = #909090
       display none
   td
     font-size      12px
+    line-height    16px
     padding        7px 12px
     position       relative
     border-bottom  solid 1px #130b06
