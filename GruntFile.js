@@ -14,7 +14,7 @@ module.exports =function(grunt){
         },
         css:{
           files:   ['site/styles/*.styl'],
-          tasks:   ['stylus']
+          tasks:   ['less']
         },
         html:{
           files:   ['site/*.jade'],
@@ -43,16 +43,12 @@ module.exports =function(grunt){
           dest: 'build/img'
         },
       },
-      stylus:{
-        compile: {
-          options:{
-            import:['nib']
-          },
-          files: {
-            'build/css/newStyles.css': ['site/styles/*.styl'] // compile and concat into single file
+      less:{
+        production:{
+          files:{
+            "build/css/newStyles.css": 'site/less/*.less'
           }
         }
-
       },
       jade:{
         compile:{
@@ -80,6 +76,6 @@ module.exports =function(grunt){
 
      //Run the task
      //Copy is registered but not executed. Refer to commented code in the initConfig method for details on how to add it.
-     grunt.registerTask('default', ['watch','coffee', 'uglify', 'stylus', 'jade', 'copy']);
-     grunt.registerTask('build', ['coffee', 'uglify', 'stylus','jade', 'copy']);
+     grunt.registerTask('default', ['watch','coffee', 'uglify', 'less', 'jade', 'copy']);
+     grunt.registerTask('build', ['coffee', 'uglify', 'less','jade', 'copy']);
 };
