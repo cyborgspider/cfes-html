@@ -1,0 +1,35 @@
+.modal-info{
+  overflow:hidden;
+}
+.modal-image{
+  float:        left;
+  margin-right: 30px;
+  border:       solid 1px @orange-border-default;
+  width:        536px;
+  height:       355px;
+}
+.modal-info-details{
+  & > p{
+    line-height:   24px;
+    font-size:     13px;
+    color:         @gray;
+    margin-bottom: 14px;
+    &.intro{
+      margin-bottom:26px;
+    }
+  }
+
+}
+.modal-info-title{
+  font-size:     30px;
+  color:         @orange;
+  margin-bottom: 24px;
+}
+
+// I'll find a better place for the class below, maybe a helper file or text modifiers file
+.label{
+  color: @orange;
+}
+.label+.btn{
+  margin-left:8px;
+}

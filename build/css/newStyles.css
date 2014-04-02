@@ -1,4 +1,3 @@
-/* These styles are purely for presentational purposes and should not be included in production*/
 html,
 body {
   background: #341f10;
@@ -10,11 +9,17 @@ body {
   background: #171717;
   font-family: 'Open Sans';
 }
+#modalContent {
+  width: 980px;
+  margin: 100px auto 0;
+  background: black;
+}
 .btn {
   color: #909090;
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  text-transform: uppercase;
 }
 .btn:hover {
   color: #fff;
@@ -22,11 +27,48 @@ body {
 }
 .btn-small {
   background: url(../img/btn-small.png);
-  width: 56px;
+  width: 54px;
   height: 18px;
   line-height: 18px;
   font-size: 11px;
-  text-transform: uppercase;
+}
+.btn-large {
+  background: url(../img/btn-large.png);
+  width: 96px;
+  height: 32px;
+  line-height: 34px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.modal-info {
+  overflow: hidden;
+}
+.modal-image {
+  float: left;
+  margin-right: 30px;
+  border: solid 1px #352113;
+  width: 536px;
+  height: 355px;
+}
+.modal-info-details > p {
+  line-height: 24px;
+  font-size: 13px;
+  color: #909090;
+  margin-bottom: 14px;
+}
+.modal-info-details > p.intro {
+  margin-bottom: 26px;
+}
+.modal-info-title {
+  font-size: 30px;
+  color: #e66415;
+  margin-bottom: 24px;
+}
+.label {
+  color: #e66415;
+}
+.label + .btn {
+  margin-left: 8px;
 }
 .thumbnail-list {
   overflow: hidden;
