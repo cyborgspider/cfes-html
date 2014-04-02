@@ -13,7 +13,7 @@ module.exports =function(grunt){
           tasks:   ['coffee']
         },
         css:{
-          files:   ['site/styles/*.styl'],
+          files:   ['site/less/*.less'],
           tasks:   ['less']
         },
         html:{
@@ -46,7 +46,7 @@ module.exports =function(grunt){
       less:{
         production:{
           files:{
-            "build/css/newStyles.css": 'site/less/*.less'
+            "build/css/newStyles.css": 'site/less/all.less'
           }
         }
       },
