@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+.dt-post-content {
+  font-family: 'Open Sans';
+}
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
 .tabs {
   display: block;
   border-bottom: solid 2px #341f10;
@@ -30,7 +36,12 @@
   display: block;
   text-decoration: none;
 }
+<<<<<<< HEAD
 .active .tab-link {
+=======
+.active  .tab-link,
+.tab:hover .tab-link {
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
   color: #e66415;
 }
 .table-ranks {
@@ -44,7 +55,11 @@
   position: relative;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 .table-ranks:after {
+=======
+.table-ranks th:after {
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
   content: '';
   width: 1px;
   height: 22px;
@@ -53,20 +68,35 @@
   right: 0;
   position: absolute;
 }
+<<<<<<< HEAD
 .table-ranks.last:after {
+=======
+.table-ranks th.last:after {
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
   display: none;
 }
 .table-ranks td {
   font-size: 12px;
+<<<<<<< HEAD
+=======
+  line-height: 16px;
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
   padding: 7px 12px;
   position: relative;
   border-bottom: solid 1px #130b06;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 .table-ranks.ac {
   text-align: center;
 }
 .table-ranks:after {
+=======
+.table-ranks td.ac {
+  text-align: center;
+}
+.table-ranks td:after {
+>>>>>>> 237e85f97c2f933f49dbdc5b8b7b130b0b118d78
   content: '';
   height: 1px;
   width: 100%;
