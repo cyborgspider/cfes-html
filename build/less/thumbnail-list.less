@@ -1,0 +1,80 @@
+.thumbnail-list{
+  overflow: hidden;
+}
+.thumbnail-list-item{
+  width:    268px;
+  height:   178px;
+  border:   solid 1px @orange-border-default;
+  margin:   0 20px 20px 0;
+  position: relative;
+  overflow: hidden;
+  float:    left;
+  
+  &:hover{
+    
+    border-color: @orange-border-hover;
+
+    .thumbnail-list-image{
+      .transform(scale(1.1));
+    }
+    .thumbnail-overlay{
+      opacity: 0;
+    }
+    .thumbnail-text-container-title{
+      color: @orange;
+    }
+  }
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+}
+.thumbnail-overlay{
+  position:           absolute;
+  left:               0;
+  top:                0;
+  right:              0;
+  bottom:             0;
+  background:         black;
+  opacity:            .45;
+  z-index:            2;
+  .transition(opacity,300ms,ease-out) 
+
+}
+.thumbnail-list-image{
+  .transition(all 300ms ease-out);
+  position:           absolute;
+  z-index:            1;
+}
+
+.thumbnail-text-container{
+  position:   absolute;
+  background: rgba(0,0,0,.70);
+  bottom:     0;
+  left:       0;
+  right:      0;
+  top:        110px;
+  z-index:    3;
+  padding:    12px 9px 8px 16px;
+}
+.thumbnail-text-container-title{
+  font-size:     18px;
+  color:         @gray;
+  margin-bottom: 10px;
+}
+.thumbnail-button-group{
+  float:right;
+
+  .btn{
+    margin-left:5px;
+  }
+}
+.thumbnail-text-container-detail{
+  float:     left;
+  font-size: 13px;
+  span{
+    color: @gray;
+    .thumbnail-list-item:hover &{
+      color: white;
+    }
+  }
+}

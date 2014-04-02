@@ -1,0 +1,90 @@
+.tabs{
+  display:       block;
+  border-bottom: solid 2px @brown-bg;
+  float:         left;
+  overflow:      hidden;
+}
+.tab{
+  float:        left;
+  height:       37px;
+  line-height:  37px;
+  border-top:   solid 2px transparent;
+  margin-right: 1px;
+  background:   @black;
+  font-size:    14px;
+  width:        167px;
+  text-align:   center;
+  &:hover,
+  &.active{
+    background:       @brown-bg;
+    border-top-color: @orange;
+  }
+  &.last{
+    margin-right: 0
+  }
+}
+
+.tab-link{
+  color:           @gray;
+  width:           100%;
+  height:          100%;
+  display:         block;
+  text-decoration: none;
+  .active  &{
+    color: @orange
+  }
+}
+.table-ranks{
+  width: 100%;
+  th{
+    border-bottom: solid 1px @brown-bg;
+    font-size:      13px;
+    padding :       12px;
+    color:          @brown-text;
+    position:      relative;
+    vertical-align: middle;
+    &:after{
+      content:    '';
+      width:      1px;
+      height:     22px;
+      background: @brown-bg;
+      top:        8px;
+      right:      0;
+      position:   absolute;
+    }
+    &.last:after{
+      display: none;
+    }
+  }
+
+  td{
+    font-size:      12px;
+    padding:        7px 12px;
+    position :      relative;
+    border-bottom : solid 1px #130b06;
+    vertical-align: middle;
+    &.ac{
+      text-align: center;
+    }
+    &:after{
+      content:    '';
+      height:     1px;
+      width:      100%;
+      background: #1c1c1c;
+      position:   absolute;
+      bottom:     -2px;
+      left:       0;
+    }
+  }
+
+}
+
+
+.ranks-symbol{
+  vertical-align: middle;
+}
+
+.ranks-title{
+  display:     inline;
+  margin-left: 20px;
+}
