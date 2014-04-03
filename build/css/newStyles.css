@@ -129,7 +129,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 110px;
+  top: 135px;
   z-index: 3;
   padding: 12px 9px 8px 16px;
 }
@@ -137,6 +137,7 @@ body {
   font-size: 18px;
   color: #909090;
   margin-bottom: 10px;
+  float: left;
 }
 .thumbnail-button-group {
   float: right;
