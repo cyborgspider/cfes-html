@@ -1,4 +1,5 @@
 .weapon-nav{
+  margin-bottom:35px;
   &>.btn{
     margin-right:22px;
     margin-bottom:9px;
@@ -6,13 +7,18 @@
 }
 
 .weapon-list{
-  overflow: hidden;
+  overflow:    hidden;
+  margin-left: -25px;
 }
 .weapon-list-item{
-  width:    410px;
-  height:   360px;
-  position: relative;
-  background:url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
+  float:         left;
+  width:         410px;
+  height:        360px;
+  margin-left:  25px;
+  margin-bottom: 25px;
+  position:      relative;
+  background:    url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
+
 }
 
 .weapon-header{
@@ -25,8 +31,15 @@
   font-size:    18px;
   font-weight: 700;
   &:hover, &.active{
-    background-position: 0 100%;
+    background-position: 0 -40px;
     color:               @orange;
+  }
+  &.no-dropdown{
+    background-position: 0 -80px;
+    &:hover{
+      background-position: 0 -80px;
+      color: @gray;
+    }
   }
 }
 .weapon-view{
@@ -39,6 +52,10 @@
 .weapon-text{
   text-align: right;
   font-size:  12px;
+  &.item{
+    text-align:center;
+    font-weight:700;
+  }
 }
 .weapon-info{
   background: #141414;
@@ -52,10 +69,13 @@
   z-index:    1;
   overflow:   hidden;
 
-  &>p{font-size:12px}
+  &>p{font-size:12px;line-height:18px}
   &>p.label{font-size: 13px;margin-top:20px;margin-bottom:5px;}
 }
 
+.item-description{
+
+}
 .stat-list{
   padding-top: 15px;
   color:       #909090;
@@ -105,7 +125,7 @@
       height:     5px;
       background: url(../img/ui/list-bullet.png) no-repeat;
       left:       1px;
-      top:        3px;
+      top:        4px;
       position:   absolute;
     }
 

@@ -194,11 +194,20 @@ body {
   padding-left: 20px;
   font-size: 18px;
   font-weight: 700;
+  color: #909090;
 }
 .weapon-header:hover,
 .weapon-header.active {
-  background-position: 0 100%;
+  background-position: 0 -40px;
   color: #e66415;
+}
+.weapon-header.no-dropdown {
+  background-position: 0 -80px;
+  cursor: default;
+}
+.weapon-header.no-dropdown:hover {
+  background-position: 0 -80px;
+  color: #909090;
 }
 .weapon-view {
   padding: 20px;
@@ -207,9 +216,19 @@ body {
   display: block;
   margin: auto;
 }
+.weapon-image.small {
+  margin-top: 40px;
+  text-shadow: 0 1px 1px black;
+}
 .weapon-text {
   text-align: right;
   font-size: 12px;
+}
+.weapon-text.alternate {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 18px auto;
 }
 .weapon-info {
   background: #141414;
@@ -221,7 +240,7 @@ body {
   position: absolute;
   top: 39px;
   z-index: 1;
-  overflow: hidden;
+  overflow-y: auto;
 }
 .weapon-info > p {
   font-size: 12px;
@@ -231,6 +250,11 @@ body {
   font-size: 13px;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+.weapon-description {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
 }
 .stat-list {
   padding-top: 15px;
