@@ -64,7 +64,7 @@ head(profile='http://gmpg.org/xfn/11')
     //-Middle content
     #newContent
       nav.weapon-nav
-        a.btn.btn-long(href="#assalto") Fuzis de Assalto
+        a.btn.btn-long.active(href="#assalto") Fuzis de Assalto
         a.btn.btn-long(href="#submetralhadoras") Submetralhadoras
         a.btn.btn-long(href="#precisao") Fuzis de Precisão
         a.btn.btn-long(href="#metralhadoras") Metralhadoras
@@ -95,7 +95,7 @@ head(profile='http://gmpg.org/xfn/11')
             p.label Preço
             p Padrão
           .weapon-view
-            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="Weapon AK")
+            img.weapon-img(src="img/weapons/weapon-M16.png", alt="M16")
             .weapon-text MUNIÇÃO : <span class="text-highlight">30 / 90</span>
             ul.stat-list
               li.stat-list-item
@@ -118,11 +118,12 @@ head(profile='http://gmpg.org/xfn/11')
                 p Peso
                 .stat-bar
                   .stat-bar-fill(style="width:99%")
-        li.weapon-list-item(data-type="aremesso")
-          .weapon-header M16
+
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M16-CAMO
           .weapon-info
             p.label Descrição
-            p Fuzil padrão das tropas americanas.
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
             p.label Especificação
             dl.spec-list
               dt Fabricação:
@@ -134,12 +135,12 @@ head(profile='http://gmpg.org/xfn/11')
               dt Modos de Tiro:
               dd Automática
               dt Disponibilidade:
-              dd Padrão
+              dd Eventos
             p.label Preço
             p Padrão
           .weapon-view
-            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="Weapon AK")
-            .weapon-text MUNIÇÃO : <span class="text-highlight">30 / 90</span>
+            img.weapon-img(src="img/weapons/weapon-M16_CAMO.png", alt="M16 CAMO")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
             ul.stat-list
               li.stat-list-item
                 p Potência
@@ -161,11 +162,11 @@ head(profile='http://gmpg.org/xfn/11')
                 p Peso
                 .stat-bar
                   .stat-bar-fill(style="width:99%")
-        li.weapon-list-item(data-type="equipamento")
-          .weapon-header M16
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1
           .weapon-info
             p.label Descrição
-            p Fuzil padrão das tropas americanas.
+            p Pequeno fuzil militar americano de grande estabilidade e precisão.
             p.label Especificação
             dl.spec-list
               dt Fabricação:
@@ -177,11 +178,11 @@ head(profile='http://gmpg.org/xfn/11')
               dt Modos de Tiro:
               dd Automática
               dt Disponibilidade:
-              dd Padrão
+              dd Loja do Jogo
             p.label Preço
-            p Padrão
+            p 43000 GP/Permanent
           .weapon-view
-            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="Weapon AK")
+            img.weapon-img(src="img/weapons/weapon-M4A1.png", alt="M4A1")
             .weapon-text MUNIÇÃO : <span class="text-highlight">30 / 90</span>
             ul.stat-list
               li.stat-list-item
@@ -205,10 +206,10 @@ head(profile='http://gmpg.org/xfn/11')
                 .stat-bar
                   .stat-bar-fill(style="width:99%")
         li.weapon-list-item(data-type="assalto")
-          .weapon-header M16
+          .weapon-header M4A1-ZEBRA
           .weapon-info
             p.label Descrição
-            p Fuzil padrão das tropas americanas.
+            p Versão modificada da M4A1, com camuflagem zebra e pente extendido para 35 cartuchos.
             p.label Especificação
             dl.spec-list
               dt Fabricação:
@@ -220,12 +221,2507 @@ head(profile='http://gmpg.org/xfn/11')
               dt Modos de Tiro:
               dd Automática
               dt Disponibilidade:
-              dd Padrão
+              dd Distintivos
+            p.label Preço
+            p Distintivos
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Zebra.png", alt="M4A1-ZEBRA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1-BRONZE
+          .weapon-info
+            p.label Descrição
+            p Versão modificada da M4A1, banhada a bronze, com pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Missão
+            p.label Preço
+            p Missão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Bronze.png", alt="M4A1-BRONZE")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1-ADVANCED
+          .weapon-info
+            p.label Descrição
+            p Uma versão modificada da M4A1, com um silenciador de alto desempenho e um pente extendido para 35 cartuchos.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Loja do Jogo
+            p.label Preço
+            p 3 dias: 1100 ZP<br>7 dias: 1800 ZP<br>30 dias: 3800 ZP<br>90 dias: 11000 ZP
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Advanced.png", alt="M4A1-ADVANCED")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1-SAKURA
+          .weapon-info
+            p.label Descrição
+            p Para cada herói Samurai que morre em combate, uma pétala da lendária árvore Sakura precipita-se ao chão. Esta M4A1 foi banhada com essas famosas pétalas que garante a proteção dos sagrados guerreiros japoneses no campo de batalha.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Mercado Negro
+            p.label Preço
+            p Mercado Negro
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Sakura.png", alt="M4A1-SAKURA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1-CUSTOM
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
             p.label Preço
             p Padrão
           .weapon-view
-            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="Weapon AK")
-            .weapon-text MUNIÇÃO : <span class="text-highlight">30 / 90</span>
+            img.weapon-img(src="img/weapons/weapon-M4A1-Custom.png", alt="M4A1-CUSTOM")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1 ADVANCED TIGER
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Tiger.png", alt="M4A1 ADVANCED TIGER")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK-47
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-47.png", alt="AK-47")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK-47-KNIFE
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="AK-47-KNIFE")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK-47-KNIFE BLACK
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-47_Knife_Black.png", alt="AK-47-KNIFE BLACK")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK-47-SCOPE BLACK
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-47_Scope_Black.png", alt="AK-47-SCOPE BLACK")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header FN FAL CAMO GRENADE LAUNCHER
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-FN_FAL_CAMO_GRENADE_LAUNCHER.png", alt="FN FAL CAMO GRENADE LAUNCHER")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK-74
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-74.png", alt="AK-74")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AKS-74U
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK-74_U.png", alt="AKS-74U")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header STEYR AUG A1
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Steyr_AUG_A1.png", alt="STEYR AUG A1")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header SG552-ADVANCED
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-SG552-Advanced.png", alt="SG552-ADVANCED")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header FAMAS
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-FAMAS.png", alt="FAMAS")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header G36K
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-G36K.png", alt="G36K")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header SG552
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-SG552.png", alt="SG552")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header SCAR-HEAVY
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Scar_Heavy.png", alt="SCAR-HEAVY")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header SCAR-LIGHT
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Scar_Light.png", alt="SCAR-LIGHT")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header K-2
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-K-2.png", alt="K-2")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header QBZ-95
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-QBZ95.png", alt="QBZ-95")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header XM8
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-XM8.png", alt="XM8")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header WINCHESTER
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Winchester.png", alt="WINCHESTER")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header TYPE89
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Type89.png", alt="TYPE89")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1-BLUE CRYSTAL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-Blue_Crystal.png", alt="M4A1-BLUE CRYSTAL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header M4A1 - X
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M4A1-X.png", alt="M4A1 - X")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK47-CAMO
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK47-Camo.png", alt="AK47-CAMO")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="assalto")
+          .weapon-header AK47 - BLUE CRYSTAL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AK47-Blue_Crystal.png", alt="AK47 - BLUE CRYSTAL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header MP5
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-MP5.png", alt="MP5")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header MP5-ADV
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-MP5-ADV.png", alt="MP5-ADV")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header P90
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-P90.png", alt="P90")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header UZI
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Uzi.png", alt="UZI")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header K1A
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-K1A.png", alt="K1A")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header THOMPSON
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-THOMPSON.png", alt="THOMPSON")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header MP7
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-MP7.png", alt="MP7")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header MICRO-GALIL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-MICRO-GALIL.png", alt="MICRO-GALIL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header KRISS SUPER V
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Kriss_Super_V.png", alt="KRISS SUPER V")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header KRISS SUPER-V TIGER
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Kriss_Super_V_Tiger.png", alt="KRISS SUPER-V TIGER")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header DUAL UZI TIGER
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dual_Uzi_Tiger.png", alt="DUAL UZI TIGER")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="submetralhadoras")
+          .weapon-header DUAL UZI
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dual_Uzi.png", alt="DUAL UZI")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header M700
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M700.png", alt="M700")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header AWM
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AWM.png", alt="AWM")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header AWM-CAMO
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AWM_Camo.png", alt="AWM-CAMO")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header DRAGUNOV
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dragunov.png", alt="DRAGUNOV")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header PSG-1
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-PSG-1.png", alt="PSG-1")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header AWM ADVANCED
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AWM-Advanced.png", alt="AWM ADVANCED")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header DSR-1
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-DSR-1.png", alt="DSR-1")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header AWM ZEBRA
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AWM_Stripes.png", alt="AWM ZEBRA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="precisao")
+          .weapon-header AWM-BLUE CRYSTAL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-AWM_Blue_Crystal.png", alt="AWM-BLUE CRYSTAL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="metralhadoras")
+          .weapon-header M60
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M60.png", alt="M60")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="metralhadoras")
+          .weapon-header RPK
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-RPK.png", alt="RPK")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="metralhadoras")
+          .weapon-header M60-A
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-M60_A.png", alt="M60-A")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="metralhadoras")
+          .weapon-header ULTIMAX 100
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Ultimax_100.png", alt="ULTIMAX 100")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="metralhadoras")
+          .weapon-header GATLING GUN-BLUE CRYSTAL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Gatling_Gun_Blue_Crystal.png", alt="GATLING GUN-BLUE CRYSTAL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="escopetas")
+          .weapon-header SPAS-12
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Spas-12.png", alt="SPAS-12")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="escopetas")
+          .weapon-header DUAL DESPERADO
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dual_Desperado.png", alt="DUAL DESPERADO")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="escopetas")
+          .weapon-header XM1014
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-XM1014.png", alt="XM1014")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="escopetas")
+          .weapon-header REMINGTON870
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-REMINGTON870.png", alt="REMINGTON870")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
             ul.stat-list
               li.stat-list-item
                 p Potência
@@ -248,10 +2744,10 @@ head(profile='http://gmpg.org/xfn/11')
                 .stat-bar
                   .stat-bar-fill(style="width:99%")
         li.weapon-list-item(data-type="pistolas")
-          .weapon-header M16
+          .weapon-header BERETTA M9
           .weapon-info
             p.label Descrição
-            p Fuzil padrão das tropas americanas.
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
             p.label Especificação
             dl.spec-list
               dt Fabricação:
@@ -263,12 +2759,702 @@ head(profile='http://gmpg.org/xfn/11')
               dt Modos de Tiro:
               dd Automática
               dt Disponibilidade:
-              dd Padrão
+              dd Eventos
             p.label Preço
             p Padrão
           .weapon-view
-            img.weapon-img(src="img/weapons/weapon-AK-47_Knife.png", alt="Weapon AK")
-            .weapon-text MUNIÇÃO : <span class="text-highlight">30 / 90</span>
+            img.weapon-img(src="img/weapons/weapon-Beretta_M9.png", alt="BERETTA M9")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header COLT 1911
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Colt_1911.png", alt="COLT 1911")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header P228
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-P228.png", alt="P228")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DUAL COLT
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dual_Colt.png", alt="DUAL COLT")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DESERT EAGLE
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Desert_Eagle.png", alt="DESERT EAGLE")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DESERT EAGLE - B
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Desert_Eagle.png", alt="DESERT EAGLE - B")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header GLOCK-18
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Glock_18.png", alt="GLOCK-18")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header ANACONDA
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Anaconda.png", alt="ANACONDA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DUAL DOUBLE BARREL BRONZE
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Dual_Double_Barrel_Bronze.png", alt="DUAL DOUBLE BARREL BRONZE")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header MK-23
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-MK23.png", alt="MK-23")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DESERT EAGLE BRONZE
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Desert_Eagle_Bronze.png", alt="DESERT EAGLE BRONZE")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DESERT EAGLE ZEBRA
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Desert_Eagle_Zebra.png", alt="DESERT EAGLE ZEBRA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+
+        li.weapon-list-item(data-type="pistolas")
+          .weapon-header DESERT EAGLE BLUE CRYSTAL
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Desert_Eagle_Blue_Crystal.png", alt="DESERT EAGLE BLUE CRYSTAL")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+
+        li.weapon-list-item(data-type="brancas")
+          .weapon-header FACA
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Faca.png", alt="FACA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="brancas")
+          .weapon-header MACHADO
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Machado.png", alt="MACHADO")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="brancas")
+          .weapon-header PÁ
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-PÁ.png", alt="PÁ")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
+            ul.stat-list
+              li.stat-list-item
+                p Potência
+                .stat-bar
+                  .stat-bar-fill(style="width:20%")
+              li.stat-list-item
+                p Precisão
+                .stat-bar
+                  .stat-bar-fill.special(style="width:70%")
+              li.stat-list-item
+                p Velocidade
+                .stat-bar
+                  .stat-bar-fill(style="width:30%")
+              li.stat-list-item
+                p Recuo
+                .stat-bar
+                  .stat-bar-fill(style="width:15%")
+              li.stat-list-item
+                p Peso
+                .stat-bar
+                  .stat-bar-fill(style="width:99%")
+        li.weapon-list-item(data-type="brancas")
+          .weapon-header FACA ZEBRA
+          .weapon-info
+            p.label Descrição
+            p O fuzil mais popular das tropas americanas, com camuflagem, pente extendido para 35 cartuchos e silenciador.
+            p.label Especificação
+            dl.spec-list
+              dt Fabricação:
+              dd Colt Defense
+              dt Origem:
+              dd Estados Unidos
+              dt Cartucho:
+              dd 5.56x45mm NATO
+              dt Modos de Tiro:
+              dd Automática
+              dt Disponibilidade:
+              dd Eventos
+            p.label Preço
+            p Padrão
+          .weapon-view
+            img.weapon-img(src="img/weapons/weapon-Faca_Zebra.png", alt="FACA ZEBRA")
+            .weapon-text MUNIÇÃO : <span class="text-highlight">35 / 105</span>
             ul.stat-list
               li.stat-list-item
                 p Potência

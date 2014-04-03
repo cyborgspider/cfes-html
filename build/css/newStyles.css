@@ -21,6 +21,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.btn.active,
 .btn:hover {
   color: #fff;
   background-position: 0 100%;
@@ -173,18 +174,16 @@ body {
 }
 .weapon-list {
   overflow: hidden;
+  margin-left: -25px;
 }
 .weapon-list-item {
   float: left;
   width: 410px;
   height: 360px;
-  margin-right: 25px;
+  margin-left: 25px;
   margin-bottom: 25px;
   position: relative;
   background: url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
-}
-.weapon-list-item:nth-child(even) {
-  margin-right: 0;
 }
 .weapon-header {
   width: 390px;
@@ -226,6 +225,7 @@ body {
 }
 .weapon-info > p {
   font-size: 12px;
+  line-height: 18px;
 }
 .weapon-info > p.label {
   font-size: 13px;
@@ -280,7 +280,7 @@ body {
   height: 5px;
   background: url(../img/ui/list-bullet.png) no-repeat;
   left: 1px;
-  top: 3px;
+  top: 4px;
   position: absolute;
 }
 .spec-list dd {

@@ -7,20 +7,18 @@
 }
 
 .weapon-list{
-  overflow: hidden;
+  overflow:    hidden;
+  margin-left: -25px;
 }
 .weapon-list-item{
   float:         left;
   width:         410px;
   height:        360px;
-  margin-right:  25px;
+  margin-left:  25px;
   margin-bottom: 25px;
   position:      relative;
   background:    url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
 
-  &:nth-child(even){
-    margin-right: 0;
-  }
 }
 
 .weapon-header{
@@ -60,7 +58,7 @@
   z-index:    1;
   overflow:   hidden;
 
-  &>p{font-size:12px}
+  &>p{font-size:12px;line-height:18px}
   &>p.label{font-size: 13px;margin-top:20px;margin-bottom:5px;}
 }
 
@@ -113,7 +111,7 @@
       height:     5px;
       background: url(../img/ui/list-bullet.png) no-repeat;
       left:       1px;
-      top:        3px;
+      top:        4px;
       position:   absolute;
     }
 
