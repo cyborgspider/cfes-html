@@ -3,7 +3,7 @@
 <head profile="http://gmpg.org/xfn/11">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Characters «  Crossfire Español</title>
+  <title>Weapons «  Crossfire Español</title>
   <link rel="stylesheet" href="http://es.crossfire.z8games.com/wp-content/themes/default_theme/css/vendor/normalize.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="http://es.crossfire.z8games.com/wp-content/themes/default_theme/css/vendor/reset.css" type="text/css" media="screen"/>
   <link rel="shortcut icon" href="http://images.z8games.com/cfes/wp-content/themes/cfes/favicon.ico"/>
@@ -36,20 +36,264 @@
   <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
   <script>
     $(function(){
+        function filterWeapons(weaponType){
+          $('.weapon-list-item:not([data-type="'+weaponType+'"])').hide();
+          $('.weapon-list-item[data-type='+weaponType+']').show();
+        }
+        
         $('.weapon-list-item').on('click','.weapon-header',
           function(){
             $(this).toggleClass('active');
             $(this).next('.weapon-info').slideToggle(100);
           }
         )
+        $('.weapon-nav').on('click','.btn',
+          function(e){
+            e.preventDefault();
+            var weaponType= $(this).attr('href').substring(1);
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            filterWeapons(weaponType);
+          }
+        )
+        
+        filterWeapons('assalto');
     });
   </script>
 </head>
 <body>
   <div id="newContent">
-    <nav class="weapon-nav"><a href="#" class="btn btn-long">Fuzis de Assalto</a><a href="#" class="btn btn-long">Submetralhadoras</a><a href="#" class="btn btn-long">Fuzis de Precisão</a><a href="#" class="btn btn-long">Metralhadoras</a><a href="#" class="btn btn-long">Escopetas</a><a href="#" class="btn btn-long">Pistolas</a><a href="#" class="btn btn-long">Equipamento</a><a href="#" class="btn btn-long">Arremesso</a><a href="#" class="btn btn-long">Armas Brancas</a></nav>
+    <nav class="weapon-nav"><a href="#assalto" class="btn btn-long">Fuzis de Assalto</a><a href="#submetralhadoras" class="btn btn-long">Submetralhadoras</a><a href="#precisao" class="btn btn-long">Fuzis de Precisão</a><a href="#metralhadoras" class="btn btn-long">Metralhadoras</a><a href="#escopetas" style="margin-right:0" class="btn btn-long">Escopetas</a><a href="#pistolas" class="btn btn-long">Pistolas</a><a href="#equipamento" class="btn btn-long">Equipamento</a><a href="#arremesso" class="btn btn-long">Arremesso</a><a href="#brancas" class="btn btn-long">Armas Brancas</a></nav>
     <ul class="weapon-list">
-      <li class="weapon-list-item">
+      <li data-type="assalto" class="weapon-list-item">
+        <div class="weapon-header">M16</div>
+        <div class="weapon-info">
+          <p class="label">Descrição</p>
+          <p>Fuzil padrão das tropas americanas.</p>
+          <p class="label">Especificação</p>
+          <dl class="spec-list">
+            <dt>Fabricação:</dt>
+            <dd>Colt Defense</dd>
+            <dt>Origem:</dt>
+            <dd>Estados Unidos</dd>
+            <dt>Cartucho:</dt>
+            <dd>5.56x45mm NATO</dd>
+            <dt>Modos de Tiro:</dt>
+            <dd>Automática</dd>
+            <dt>Disponibilidade:</dt>
+            <dd>Padrão</dd>
+          </dl>
+          <p class="label">Preço</p>
+          <p>Padrão</p>
+        </div>
+        <div class="weapon-view"><img src="img/weapons/weapon-AK-47_Knife.png" alt="Weapon AK" class="weapon-img"/>
+          <div class="weapon-text">MUNIÇÃO : <span class="text-highlight">30 / 90</span></div>
+          <ul class="stat-list">
+            <li class="stat-list-item">
+              <p>Potência</p>
+              <div class="stat-bar">
+                <div style="width:20%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Precisão</p>
+              <div class="stat-bar">
+                <div style="width:70%" class="stat-bar-fill special"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Velocidade</p>
+              <div class="stat-bar">
+                <div style="width:30%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Recuo</p>
+              <div class="stat-bar">
+                <div style="width:15%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Peso</p>
+              <div class="stat-bar">
+                <div style="width:99%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li data-type="aremesso" class="weapon-list-item">
+        <div class="weapon-header">M16</div>
+        <div class="weapon-info">
+          <p class="label">Descrição</p>
+          <p>Fuzil padrão das tropas americanas.</p>
+          <p class="label">Especificação</p>
+          <dl class="spec-list">
+            <dt>Fabricação:</dt>
+            <dd>Colt Defense</dd>
+            <dt>Origem:</dt>
+            <dd>Estados Unidos</dd>
+            <dt>Cartucho:</dt>
+            <dd>5.56x45mm NATO</dd>
+            <dt>Modos de Tiro:</dt>
+            <dd>Automática</dd>
+            <dt>Disponibilidade:</dt>
+            <dd>Padrão</dd>
+          </dl>
+          <p class="label">Preço</p>
+          <p>Padrão</p>
+        </div>
+        <div class="weapon-view"><img src="img/weapons/weapon-AK-47_Knife.png" alt="Weapon AK" class="weapon-img"/>
+          <div class="weapon-text">MUNIÇÃO : <span class="text-highlight">30 / 90</span></div>
+          <ul class="stat-list">
+            <li class="stat-list-item">
+              <p>Potência</p>
+              <div class="stat-bar">
+                <div style="width:20%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Precisão</p>
+              <div class="stat-bar">
+                <div style="width:70%" class="stat-bar-fill special"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Velocidade</p>
+              <div class="stat-bar">
+                <div style="width:30%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Recuo</p>
+              <div class="stat-bar">
+                <div style="width:15%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Peso</p>
+              <div class="stat-bar">
+                <div style="width:99%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li data-type="equipamento" class="weapon-list-item">
+        <div class="weapon-header">M16</div>
+        <div class="weapon-info">
+          <p class="label">Descrição</p>
+          <p>Fuzil padrão das tropas americanas.</p>
+          <p class="label">Especificação</p>
+          <dl class="spec-list">
+            <dt>Fabricação:</dt>
+            <dd>Colt Defense</dd>
+            <dt>Origem:</dt>
+            <dd>Estados Unidos</dd>
+            <dt>Cartucho:</dt>
+            <dd>5.56x45mm NATO</dd>
+            <dt>Modos de Tiro:</dt>
+            <dd>Automática</dd>
+            <dt>Disponibilidade:</dt>
+            <dd>Padrão</dd>
+          </dl>
+          <p class="label">Preço</p>
+          <p>Padrão</p>
+        </div>
+        <div class="weapon-view"><img src="img/weapons/weapon-AK-47_Knife.png" alt="Weapon AK" class="weapon-img"/>
+          <div class="weapon-text">MUNIÇÃO : <span class="text-highlight">30 / 90</span></div>
+          <ul class="stat-list">
+            <li class="stat-list-item">
+              <p>Potência</p>
+              <div class="stat-bar">
+                <div style="width:20%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Precisão</p>
+              <div class="stat-bar">
+                <div style="width:70%" class="stat-bar-fill special"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Velocidade</p>
+              <div class="stat-bar">
+                <div style="width:30%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Recuo</p>
+              <div class="stat-bar">
+                <div style="width:15%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Peso</p>
+              <div class="stat-bar">
+                <div style="width:99%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li data-type="assalto" class="weapon-list-item">
+        <div class="weapon-header">M16</div>
+        <div class="weapon-info">
+          <p class="label">Descrição</p>
+          <p>Fuzil padrão das tropas americanas.</p>
+          <p class="label">Especificação</p>
+          <dl class="spec-list">
+            <dt>Fabricação:</dt>
+            <dd>Colt Defense</dd>
+            <dt>Origem:</dt>
+            <dd>Estados Unidos</dd>
+            <dt>Cartucho:</dt>
+            <dd>5.56x45mm NATO</dd>
+            <dt>Modos de Tiro:</dt>
+            <dd>Automática</dd>
+            <dt>Disponibilidade:</dt>
+            <dd>Padrão</dd>
+          </dl>
+          <p class="label">Preço</p>
+          <p>Padrão</p>
+        </div>
+        <div class="weapon-view"><img src="img/weapons/weapon-AK-47_Knife.png" alt="Weapon AK" class="weapon-img"/>
+          <div class="weapon-text">MUNIÇÃO : <span class="text-highlight">30 / 90</span></div>
+          <ul class="stat-list">
+            <li class="stat-list-item">
+              <p>Potência</p>
+              <div class="stat-bar">
+                <div style="width:20%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Precisão</p>
+              <div class="stat-bar">
+                <div style="width:70%" class="stat-bar-fill special"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Velocidade</p>
+              <div class="stat-bar">
+                <div style="width:30%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Recuo</p>
+              <div class="stat-bar">
+                <div style="width:15%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+            <li class="stat-list-item">
+              <p>Peso</p>
+              <div class="stat-bar">
+                <div style="width:99%" class="stat-bar-fill"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li data-type="pistolas" class="weapon-list-item">
         <div class="weapon-header">M16</div>
         <div class="weapon-info">
           <p class="label">Descrição</p>

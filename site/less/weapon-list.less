@@ -1,4 +1,5 @@
 .weapon-nav{
+  margin-bottom:35px;
   &>.btn{
     margin-right:22px;
     margin-bottom:9px;
@@ -9,10 +10,17 @@
   overflow: hidden;
 }
 .weapon-list-item{
-  width:    410px;
-  height:   360px;
-  position: relative;
-  background:url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
+  float:         left;
+  width:         410px;
+  height:        360px;
+  margin-right:  25px;
+  margin-bottom: 25px;
+  position:      relative;
+  background:    url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
+
+  &:nth-child(even){
+    margin-right: 0;
+  }
 }
 
 .weapon-header{

@@ -43,8 +43,8 @@ body {
 .btn-long {
   background: url(../img/btn-long.png);
   width: 152px;
-  height: 37px;
-  line-height: 37px;
+  height: 27px;
+  line-height: 27px;
   font-size: 13px;
   text-transform: capitalize;
 }
@@ -164,6 +164,9 @@ body {
 .thumbnail-list-item:hover .thumbnail-text-container-detail span {
   color: white;
 }
+.weapon-nav {
+  margin-bottom: 35px;
+}
 .weapon-nav > .btn {
   margin-right: 22px;
   margin-bottom: 9px;
@@ -172,10 +175,16 @@ body {
   overflow: hidden;
 }
 .weapon-list-item {
+  float: left;
   width: 410px;
   height: 360px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   position: relative;
   background: url(../img/ui/weapon-bg.jpg) no-repeat #1f1f1f;
+}
+.weapon-list-item:nth-child(even) {
+  margin-right: 0;
 }
 .weapon-header {
   width: 390px;
