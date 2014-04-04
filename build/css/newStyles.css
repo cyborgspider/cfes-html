@@ -73,13 +73,6 @@ body {
   color: #e66415;
   margin-bottom: 24px;
 }
-.label,
-.text-highlight {
-  color: #a6511d;
-}
-.label + .btn {
-  margin-left: 8px;
-}
 .thumbnail-list {
   overflow: hidden;
 }
@@ -473,14 +466,19 @@ body {
   line-height: 24px;
   padding: 0 20px 20px;
 }
+.article > p {
+  margin-bottom: 30px;
+}
 .article-full-image {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .description-list {
-  color: #e66415;
+  color: #a6511d;
+  margin-bottom: 30px;
 }
 .description-list > li {
   list-style-type: decimal;
   margin-left: 1em;
+  margin-bottom: 4px;
 }
