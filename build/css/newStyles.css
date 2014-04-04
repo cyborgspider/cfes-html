@@ -448,14 +448,39 @@ body {
 .article-list-image:hover {
   border-color: #934516;
 }
+.article-list-image.no-border {
+  border: none !important;
+}
 .article-list-text {
   margin-left: 320px;
 }
-.article-list-text a {
+.article-list-text.large {
+  margin-left: 364px;
+}
+.article-list-text > p {
+  margin-bottom: 30px;
+}
+.article-list-text > p > a {
   color: #e66415;
 }
 .article-list-item-title {
   font-size: 18px;
   color: #e66415;
   margin-bottom: 5px;
+}
+.article {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 20px 20px;
+}
+.article-full-image {
+  display: block;
+  margin: 20px auto;
+}
+.description-list {
+  color: #e66415;
+}
+.description-list > li {
+  list-style-type: decimal;
+  margin-left: 1em;
 }
