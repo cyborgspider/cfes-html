@@ -37,8 +37,8 @@ head(profile='http://gmpg.org/xfn/11')
     //-Middle content
     #newContent
       nav.subpage-nav
-        a.btn.btn-long.active(href="#") Team Death Match
-        a.btn.btn-long(href="maps-search-destroy.html") Serach &amp; Destroy
+        a.btn.btn-long(href="maps-team-deathmatch.html") Team Death Match
+        a.btn.btn-long.active(href="#") Serach &amp; Destroy
         a.btn.btn-long(href="maps-ghostmode.html") Ghostmode
         a.btn.btn-long(href="maps-elimination.html") Elimination
         a.btn.btn-long(href="maps-freeforall.html", style="margin-right:0") Free for All
@@ -46,6 +46,13 @@ head(profile='http://gmpg.org/xfn/11')
         a.btn.btn-long(href="maps-special.html") Special
 
       ul.thumbnail-list
+        li.thumbnail-list-item
+            .thumbnail-overlay
+            img.thumbnail-list-image(src="img/maps/map-Downtown_list.jpg", alt="Downtown")
+            .thumbnail-text-container
+                .thumbnail-text-container-title Downtown
+                .thumbnail-button-group
+                    a(href="#").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Transport_Ship_list.jpg", alt="Transport Ship TD")
@@ -116,5 +123,6 @@ head(profile='http://gmpg.org/xfn/11')
                 .thumbnail-text-container-title Prison TD
                 .thumbnail-button-group
                     a(href="#").btn.btn-small More
+        
 
 
