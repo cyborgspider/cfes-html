@@ -165,10 +165,12 @@ body {
 .thumbnail-list-item:hover .thumbnail-text-container-detail span {
   color: white;
 }
-.weapon-nav {
+.weapon-nav,
+.subpage-nav {
   margin-bottom: 35px;
 }
-.weapon-nav > .btn {
+.weapon-nav > .btn,
+.subpage-nav > .btn {
   margin-right: 22px;
   margin-bottom: 9px;
 }
