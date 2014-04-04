@@ -1,0 +1,39 @@
+.tabs{
+  display:       block;
+  border-bottom: solid 2px @brown-bg;
+  float:         left;
+  overflow:      hidden;
+}
+.tab{
+  float:        left;
+  height:       37px;
+  line-height:  37px;
+  border-top:   solid 2px transparent;
+  margin-right: 1px;
+  background:   @black;
+  font-size:    14px;
+  width:        167px;
+  text-align:   center;
+  &:hover,
+  &.active{
+    background:       @brown-bg;
+    border-top-color: @orange;
+  }
+  &.last{
+    margin-right: 0
+  }
+  .tab-count-4 > &{
+    width: 211px;
+  }
+}
+
+.tab-link{
+  color:           @gray;
+  width:           100%;
+  height:          100%;
+  display:         block;
+  text-decoration: none;
+  .active > &{
+    color: @orange
+  }
+}
