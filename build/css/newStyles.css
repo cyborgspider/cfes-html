@@ -14,6 +14,16 @@ body {
   margin: 100px auto 0;
   background: black;
 }
+strong {
+  font-weight: bold;
+}
+.label,
+.text-highlight {
+  color: #a6511d;
+}
+.label + .btn {
+  margin-left: 8px;
+}
 .btn {
   color: #909090;
   text-decoration: none;
@@ -433,6 +443,8 @@ body {
 }
 .article-list-item {
   clear: both;
+  margin-bottom: 24px;
+  overflow: hidden;
 }
 .article-list-image {
   float: left;
