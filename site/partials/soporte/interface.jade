@@ -1,4 +1,4 @@
-.tab-content.hide(data-tab-content="interface")
+.tab-content(data-tab-content="interface",style="display:none")
   ul.subtabs.tab-count-6
     li.subtab.active: a.subtab-link(href="#interface-1") Lobby
     li.subtab: a.subtab-link(href="#interface-2") Sala
@@ -7,85 +7,86 @@
     li.subtab: a.subtab-link(href="#interface-5") Tienda
     li.subtab: a.subtab-link(href="#interface-6") Almacén
 
-  .article(data-subtab-content="interface-1")
-    p Esta es la pantalla del lobby de Cross Fire. Puede seleccionar un servidor y un canal donde jugar. También puede seleccionar una sala en espera o una habitación disponible para comenzar una partida rápidamente.
-    img.article-full-image(src="img/soporte/interface-1.jpg", alt="Interface")
-    p Ayuda. Puede acceder a una partida inmediatamente uniéndose a una partida que no esté llena.
-    ul.description-list
-      li Aquí se muestra la información sobre servidores y canales, lo que le permite determinar su ubicación cuando se comunique con amigos y miembros de su Clan.
-      li Esta es la lista de salas a las que puede entrar. A menos que se muestre un mensaje de “no Permitido” o “Sala Privada”, puede acceder a cualquier sala.
-      li Para crear una sala, haga clic en [Nueva Sala] y entre en una sala en espera. Seleccione [ingreso rápido] o elija una sala de juego, entonces seleccione [Unirse] o haga doble clic con el botón derecho del ratón para acceder a una partida de manera inmediata.
-      li Esta es la ventana del chat. Puede comunicarse con sus compañeros de Clan o con otra persona en la lista de espera.
-      li Puede seleccionar tres modos de chat; mensajes privados, Clan o normal.
-      li Puede ver la información de su sala en la lista de salas (Cuadro 2).
-      li Puede ver a otros jugadores, amigos y compañeros de Clan en la lista de espera.
-      li Tienda: Aquí puede comprar armas, personajes, y otros artículos. Inventario: Puede adquirir personajes, mochilas, armas y equipo.
-      li Atrás: Vuelta a la pantalla anterior.
-    p <strong>Lista de Amigos:</strong> Puede añadir/borrar amigos en esta lista. <br>
-      |<strong>Opciones:</strong> Puede acceder a varias opciones de juego.<br>
-      |<strong>Fin del Juego:</strong> Termina el juego
+  .all-subtab-content
+    .article.subtab-content(data-subtab-content="interface-1")
+      p Esta es la pantalla del lobby de Cross Fire. Puede seleccionar un servidor y un canal donde jugar. También puede seleccionar una sala en espera o una habitación disponible para comenzar una partida rápidamente.
+      img.article-full-image(src="img/soporte/interface-1.jpg", alt="Interface")
+      p Ayuda. Puede acceder a una partida inmediatamente uniéndose a una partida que no esté llena.
+      ul.description-list
+        li Aquí se muestra la información sobre servidores y canales, lo que le permite determinar su ubicación cuando se comunique con amigos y miembros de su Clan.
+        li Esta es la lista de salas a las que puede entrar. A menos que se muestre un mensaje de “no Permitido” o “Sala Privada”, puede acceder a cualquier sala.
+        li Para crear una sala, haga clic en [Nueva Sala] y entre en una sala en espera. Seleccione [ingreso rápido] o elija una sala de juego, entonces seleccione [Unirse] o haga doble clic con el botón derecho del ratón para acceder a una partida de manera inmediata.
+        li Esta es la ventana del chat. Puede comunicarse con sus compañeros de Clan o con otra persona en la lista de espera.
+        li Puede seleccionar tres modos de chat; mensajes privados, Clan o normal.
+        li Puede ver la información de su sala en la lista de salas (Cuadro 2).
+        li Puede ver a otros jugadores, amigos y compañeros de Clan en la lista de espera.
+        li Tienda: Aquí puede comprar armas, personajes, y otros artículos. Inventario: Puede adquirir personajes, mochilas, armas y equipo.
+        li Atrás: Vuelta a la pantalla anterior.
+      p <strong>Lista de Amigos:</strong> Puede añadir/borrar amigos en esta lista. <br>
+        |<strong>Opciones:</strong> Puede acceder a varias opciones de juego.<br>
+        |<strong>Fin del Juego:</strong> Termina el juego
 
-  .article(data-subtab-content="interface-2")
-    p Esta es la sala de espera. La partida empezará cuando todos los jugadores en la sala de espera estén preparados. Las opciones de combate y los distintos parámetros son decididos por el anfitrión de la sala.
-    img.article-full-image(src="img/soporte/interface-2.jpg", alt="Interface")
-    p Ayuda. Puede acceder a una partida inmediatamente uniéndoseAyuda. Necesita tener disponible al menos una bolsa. Si accede al Inventario o la Tienda desde la sala de espera, saldrá de la sala.<br>
-      |Si cuando todos los jugadores estén preparados la partida no comienza pasados unos instantes, el anfitrión de la sala será desconectado automáticamente y se nombrará un nuevo anfitrión a una partida que no esté llena.
-    ul.description-list
-      li Puede ver los miembros de los equipos de Black List y Global Risk.
-      li Existen botones de [Expulsar], [Invitar], y [Empezar Partida]. Si no es usted el anfitrión de la sala, verá un botón de [Listo] en lugar del botón de [Empezar Partida].
-      li Esta es la ventana del chat. Puede modificar los distintos tipos de chat de acuerdo a las opciones que se le ofrecen.
-      li Puede ver los ajustes de la partida en una sala, pero sólo el anfitrión puede cambiarlos.
-      li Puede seleccionar [Reparar] para devolver un arma a su estado óptimo.
-    p Puede seleccionar una bolsa en cuanto comience la partida.<br>
-      |Haga clic en [Mi Información] para acceder a sus bajas, muertes y disparos en la cabeza.
-      |Haga clic en [Amigo CF] [Clan] para comprobar qué miembros de su Clan y amigos se encuentran conectados.
+    .article.subtab-content(data-subtab-content="interface-2",style="display:none")
+      p Esta es la sala de espera. La partida empezará cuando todos los jugadores en la sala de espera estén preparados. Las opciones de combate y los distintos parámetros son decididos por el anfitrión de la sala.
+      img.article-full-image(src="img/soporte/interface-2.jpg", alt="Interface")
+      p Ayuda. Puede acceder a una partida inmediatamente uniéndoseAyuda. Necesita tener disponible al menos una bolsa. Si accede al Inventario o la Tienda desde la sala de espera, saldrá de la sala.<br>
+        |Si cuando todos los jugadores estén preparados la partida no comienza pasados unos instantes, el anfitrión de la sala será desconectado automáticamente y se nombrará un nuevo anfitrión a una partida que no esté llena.
+      ul.description-list
+        li Puede ver los miembros de los equipos de Black List y Global Risk.
+        li Existen botones de [Expulsar], [Invitar], y [Empezar Partida]. Si no es usted el anfitrión de la sala, verá un botón de [Listo] en lugar del botón de [Empezar Partida].
+        li Esta es la ventana del chat. Puede modificar los distintos tipos de chat de acuerdo a las opciones que se le ofrecen.
+        li Puede ver los ajustes de la partida en una sala, pero sólo el anfitrión puede cambiarlos.
+        li Puede seleccionar [Reparar] para devolver un arma a su estado óptimo.
+      p Puede seleccionar una bolsa en cuanto comience la partida.<br>
+        |Haga clic en [Mi Información] para acceder a sus bajas, muertes y disparos en la cabeza.
+        |Haga clic en [Amigo CF] [Clan] para comprobar qué miembros de su Clan y amigos se encuentran conectados.
 
-  .article(data-subtab-content="interface-3")
-    p Esta es una captura de imagen de un combate de Cross Fire. Se muestra información en la pantalla sin estorbar la visión del jugador. Pulse “F11” para acceder a la página de ayuda durante la partida.
-    img.article-full-image(src="img/soporte/interface-3.jpg", alt="Interface")
-    p Ayuda. Puede controlar la sensibilidad del ratón usando “Page Up” y “Page Down”. Puede controlar el brillo de la pantalla con las teclas “Home” y “End”. Puede cambiar el signo de un miembro de su equipo. También puede mostrar indicadores en el mini mapa, incluyendo compañeros de equipo y zonas donde colocar el C4.
-    ul.description-list
-      li Este radar muestra la ubicación de los objetivos y los compañeros de equipo (controle el tamaño con las teclas +/-).
-      li Si ve este icono, significa que usted tiene el C4. Si quiere darle el C4 a otro miembro de su equipo, presione “5” y después “G” (dejará caer la bomba al suelo).
-      li Pulse la tecla “B” para cambiar su bolsa de equipo. El número indica la bolsa que tiene equipada en ese momento.
-      li Muestra HP y AP.
-      li  Muestra los Objetivos.
-      li Muestra el objetivo más próximo. *Solo en Búsqueda y Destrucción.
-      li Muestra el arma que está usando y la munición restante.
-      li Puede ver sus registros de bajas históricos.
-      li El radar muestra la ubicación de los miembros de su equipo y las zonas destacadas de la misión.
-      li Muestra el apodo del espectador.
-      li Muestra el apodo de la persona que le abatió y el arma utilizada.
-      li Muestra el daño que causó a sus oponentes antes de morir.
+    .article.subtab-content(data-subtab-content="interface-3",style="display:none")
+      p Esta es una captura de imagen de un combate de Cross Fire. Se muestra información en la pantalla sin estorbar la visión del jugador. Pulse “F11” para acceder a la página de ayuda durante la partida.
+      img.article-full-image(src="img/soporte/interface-3.jpg", alt="Interface")
+      p Ayuda. Puede controlar la sensibilidad del ratón usando “Page Up” y “Page Down”. Puede controlar el brillo de la pantalla con las teclas “Home” y “End”. Puede cambiar el signo de un miembro de su equipo. También puede mostrar indicadores en el mini mapa, incluyendo compañeros de equipo y zonas donde colocar el C4.
+      ul.description-list
+        li Este radar muestra la ubicación de los objetivos y los compañeros de equipo (controle el tamaño con las teclas +/-).
+        li Si ve este icono, significa que usted tiene el C4. Si quiere darle el C4 a otro miembro de su equipo, presione “5” y después “G” (dejará caer la bomba al suelo).
+        li Pulse la tecla “B” para cambiar su bolsa de equipo. El número indica la bolsa que tiene equipada en ese momento.
+        li Muestra HP y AP.
+        li  Muestra los Objetivos.
+        li Muestra el objetivo más próximo. *Solo en Búsqueda y Destrucción.
+        li Muestra el arma que está usando y la munición restante.
+        li Puede ver sus registros de bajas históricos.
+        li El radar muestra la ubicación de los miembros de su equipo y las zonas destacadas de la misión.
+        li Muestra el apodo del espectador.
+        li Muestra el apodo de la persona que le abatió y el arma utilizada.
+        li Muestra el daño que causó a sus oponentes antes de morir.
 
-  .article(data-subtab-content="interface-4")
-    p Esta es la ventana de puntuación. Muestra el resultado del equipo, la proporción de bajas/muertes de cada jugador, EXP y EXP adicional para el mejor jugador.
-    img.article-full-image(src="img/soporte/interface-4.jpg", alt="Interface")
-    p Ayuda. Los tres mejores jugadores de un equipo serán decididos sin importar el resultado general de la partida.
-    ul.description-list
-      li Muestra la proporción de Bajas/Muertes, EXP, y EXP adicional para todos los jugadores.
-      li Muestra el equipo jugador y la información de la partida.
-      li Muestra sus logros.
-      li Muestra los mejores jugadores y el líder.
+    .article.subtab-content(data-subtab-content="interface-4",style="display:none")
+      p Esta es la ventana de puntuación. Muestra el resultado del equipo, la proporción de bajas/muertes de cada jugador, EXP y EXP adicional para el mejor jugador.
+      img.article-full-image(src="img/soporte/interface-4.jpg", alt="Interface")
+      p Ayuda. Los tres mejores jugadores de un equipo serán decididos sin importar el resultado general de la partida.
+      ul.description-list
+        li Muestra la proporción de Bajas/Muertes, EXP, y EXP adicional para todos los jugadores.
+        li Muestra el equipo jugador y la información de la partida.
+        li Muestra sus logros.
+        li Muestra los mejores jugadores y el líder.
 
-  .article(data-subtab-content="interface-5")
-    p Esta es la ventana de la Tienda.
-    img.article-full-image(src="img/soporte/interface-5.jpg", alt="Interface")
-    p Ayuda. Puede visitar la Tienda de manera más eficiente utilizando el botón de “Comparar”. Pulse “Todas” para mostrar distintas armas.
-    ul.description-list
-      li Muestra el nivel actual de GP.
-      li Puede comparar 2 armas. Seleccione dos armas y pulse el botón “Comparar”. Se mostrará una ventana de comparación.
-      li Seleccione un artículo y pulse el botón “Comprar”.
-      li Puede examinar artículos en la categoría en la que se encuentre incluyendo artículos “Nuevos y Populares”. Si desplaza el cursor de su ratón sobre la imagen del artículo, podrá ver la información acerca de este.
+    .article.subtab-content(data-subtab-content="interface-5",style="display:none")
+      p Esta es la ventana de la Tienda.
+      img.article-full-image(src="img/soporte/interface-5.jpg", alt="Interface")
+      p Ayuda. Puede visitar la Tienda de manera más eficiente utilizando el botón de “Comparar”. Pulse “Todas” para mostrar distintas armas.
+      ul.description-list
+        li Muestra el nivel actual de GP.
+        li Puede comparar 2 armas. Seleccione dos armas y pulse el botón “Comparar”. Se mostrará una ventana de comparación.
+        li Seleccione un artículo y pulse el botón “Comprar”.
+        li Puede examinar artículos en la categoría en la que se encuentre incluyendo artículos “Nuevos y Populares”. Si desplaza el cursor de su ratón sobre la imagen del artículo, podrá ver la información acerca de este.
 
-  .article(data-subtab-content="interface-6")
-    p Puede ver todos los artículos disponibles. Muestra sus artículos, EXP, Bajas/Muertes, etc…
-    img.article-full-image(src="img/soporte/interface-6.jpg", alt="Interface")
-    p Ayuda. No puede seleccionar la misma arma para dos bolsas. Una vez que su personaje/bolsa haya sido modificado, pulse el botón “Atrás” para guardar los cambios.
-    ul.description-list
-      li Muestra su información del juego y su perfil.
-      li Puede consultar sus armas. Presione la tecla “Quitar” para cambiar el equipo de su bolsa.
-      li Muestra los distintos tipos de artículos que ha comprado.
-      li Muestra la lista de artículos correspondiente a cada categoría.
-      li Puede ver una lista de repeticiones guardadas. Seleccione el archivo que desea ver y pulse “Play”. Puede borrar archivos pulsando [Borrar].
-      li Puede reparar todos sus artículos.
+    .article.subtab-content(data-subtab-content="interface-6",style="display:none")
+      p Puede ver todos los artículos disponibles. Muestra sus artículos, EXP, Bajas/Muertes, etc…
+      img.article-full-image(src="img/soporte/interface-6.jpg", alt="Interface")
+      p Ayuda. No puede seleccionar la misma arma para dos bolsas. Una vez que su personaje/bolsa haya sido modificado, pulse el botón “Atrás” para guardar los cambios.
+      ul.description-list
+        li Muestra su información del juego y su perfil.
+        li Puede consultar sus armas. Presione la tecla “Quitar” para cambiar el equipo de su bolsa.
+        li Muestra los distintos tipos de artículos que ha comprado.
+        li Muestra la lista de artículos correspondiente a cada categoría.
+        li Puede ver una lista de repeticiones guardadas. Seleccione el archivo que desea ver y pulse “Play”. Puede borrar archivos pulsando [Borrar].
+        li Puede reparar todos sus artículos.

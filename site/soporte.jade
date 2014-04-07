@@ -37,26 +37,32 @@ head(profile='http://gmpg.org/xfn/11')
     script(src="http://code.jquery.com/jquery-2.1.0.min.js", type="text/javascript")
     script.
       $(function(){
-          function switchTab(tabContent){
-            $('.tab-content:not([rel="'+tabContent+'"])').addClass('hide');
-            $('.tab-content[rel='+tabContent+']').removeClass('hide');
+
+          function switchTab(tabContent, context){
+
+            $('.'+context+'[data-'+context+'="'+tabContent+'"]').siblings().hide();
+            $('.'+context+'[data-'+context+'="'+tabContent+'"]').show();
           }
 
           $('.tabs').on('click','.tab-link',
             function(e){
               e.preventDefault();
               var tabContent = $(this).attr('rel');
+              var context    = 'tab-content';
               $(this).parent('.tab').addClass('active');
               $(this).parent('.tab').siblings().removeClass('active');
-              switchTab(tabContent);
+              switchTab(tabContent,context);
             }
           );
 
           $('.subtabs').on('click','.subtab-link',
             function(e){
               e.preventDefault();
-              $(this).addClass('active');
-              $(this).siblings().removeClass('active');
+              tabContent = $(this).attr('href').substring(1);
+              context    = 'subtab-content';
+              $(this).parent('.subtab').addClass('active');
+              $(this).parent('.subtab').siblings().removeClass('active');
+              switchTab(tabContent,context);
             }
           );
 
@@ -70,7 +76,9 @@ head(profile='http://gmpg.org/xfn/11')
           li.tab: a.tab-link(href="#control",rel="control") Control
           li.tab.last: a.tab-link(href="#setting-1",rel="setting") Setting
 
-        include partials/soporte/getting-started
-        include partials/soporte/interface
-        include partials/soporte/setting
+        .all-tab-content
+          include partials/soporte/getting-started
+          include partials/soporte/interface
+          include partials/soporte/control
+          include partials/soporte/setting
 

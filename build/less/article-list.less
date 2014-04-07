@@ -47,9 +47,15 @@
 .article{
   font-size:   13px;
   line-height: 24px;
-  padding: 0 20px 20px;
+  padding:     0 20px 20px;
+  overflow:    hidden;
+  width:       100%;
+
   & > p{
     margin-bottom:30px;
+  }
+  &.full-width{
+    padding:0 0 20px
   }
 }
 .article-full-image{
@@ -64,4 +70,30 @@
     margin-left: 1em;
     margin-bottom: 4px;
   }
+}
+
+.col{
+  float:        left;
+
+  li{
+    margin-bottom:5px;
+  }
+  .text-highlight{
+    font-weight:bold
+  }
+}
+
+.mouse-diagram{
+  position:relative;
+  padding-top:30px;
+  width:370px;
+  height:220px;
+  background:url(../img/soporte/control-2.png) no-repeat 140px 10px;
+}
+.left-button{
+  text-align:right;
+  float:left;
+}
+.right-button{
+  float:right;
 }
