@@ -33,28 +33,54 @@
   <link id="dt_child_stylesheet-css" rel="stylesheet" href="http://es.crossfire.z8games.com/wp-content/themes/cfes/style.css?ver=3.8.1" type="text/css" media="all"/>
   <link id="dt_user_system_style-css" rel="stylesheet" href="http://es.crossfire.z8games.com/wp-content/themes/default_theme/css/users/system.css?ver=3.8.1" type="text/css" media="all"/>
   <link href="css/newStyles.css" rel="stylesheet"/>
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+  <script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+  <script>
+    $(function(){
+      $('[data-modal-trigger').colorbox({rel:'gal'});
+      $("[data-modal-trigger]").colorbox({inline:true, width:"980px"});
+    });
+  </script>
 </head>
 <body>
   <div id="newContent">
+    <div id="modalContent">
+      <div id="test" class="modal-info"><img src="img/characters/character-temp.jpg" alt="Temp" class="modal-image"/>
+        <div class="modal-info-details">
+          <h2 class="modal-info-title">Navy Seals</h2>
+          <p class="intro">The Navy Seals are an elite team made up of the best the US marines has to offer. Created by US President John F. Kennedy in 1962, they have been a driving force in stopping terrorism and completing high risk missions around the world.</p>
+          <p><span class="label">Availability:</span> In-game Item Shop/Online Item Mall</p>
+          <p><span class="label">Cost:</span> 8200 ZP</p>
+        </div>
+      </div>
+      <div id="derp" class="modal-info"><img src="img/characters/character-temp.jpg" alt="Temp" class="modal-image"/>
+        <div class="modal-info-details">
+          <h2 class="modal-info-title">DERPPPPP</h2>
+          <p class="intro">The Navy Seals are an elite team made up of the best the US marines has to offer. Created by US President John F. Kennedy in 1962, they have been a driving force in stopping terrorism and completing high risk missions around the world.</p>
+          <p><span class="label">Availability:</span> In-game Item Shop/Online Item Mall</p>
+          <p><span class="label">Cost:</span> 8200 ZP</p>
+        </div>
+      </div>
+    </div>
     <ul class="thumbnail-list">
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_sia.jpg" alt="Sia" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-sia.jpg" alt="Sia" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SIA</div>
-          <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
+          <div class="thumbnail-button-group"><a href="#test" data-modal-trigger="data-modal-trigger" class="btn btn-small">More</a>
           </div>
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_sas.jpg" alt="SAS" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-sas.jpg" alt="SAS" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SAS</div>
-          <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
+          <div class="thumbnail-button-group"><a href="#derp" data-modal-trigger="data-modal-trigger" class="btn btn-small">More</a>
           </div>
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_omoh.jpg" alt="OMOH" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-omoh.jpg" alt="OMOH" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">OMOH</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -62,7 +88,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_gsg9.jpg" alt="GSG9" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-gsg.jpg" alt="GSG9" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">GSG-9</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -70,7 +96,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_swat.jpg" alt="SWAT" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-swat.jpg" alt="SWAT" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SWAT</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -78,7 +104,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_swat_elite.jpg" alt="SWAT elite" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-swat.jpg" alt="SWAT elite" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SWAT Elite</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -86,7 +112,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_spop.jpg" alt="SPOP" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-spop.jpg" alt="SPOP" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SPOP</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -94,7 +120,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_elite.jpg" alt="SPOP elite" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-elite.jpg" alt="SPOP elite" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">SPOP Elite</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -102,7 +128,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_hero.jpg" alt="HERO" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-hero.jpg" alt="HERO" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">Hero</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -110,7 +136,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_assassin.jpg" alt="Assassin" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-assassin.jpg" alt="Assassin" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">Assassin</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -118,7 +144,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_hulk.jpg" alt="Hulk" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-hulk.jpg" alt="Hulk" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">Hulk</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -126,7 +152,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_maiden.jpg" alt="Maiden" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-maiden.jpg" alt="Maiden" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">Maiden</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>
@@ -134,7 +160,7 @@
         </div>
       </li>
       <li class="thumbnail-list-item">
-        <div class="thumbnail-overlay"></div><img src="img/characters/character_small_mutant.jpg" alt="Mutant" class="thumbnail-list-image"/>
+        <div class="thumbnail-overlay"></div><img src="img/characters/character-mutant.jpg" alt="Mutant" class="thumbnail-list-image"/>
         <div class="thumbnail-text-container">
           <div class="thumbnail-text-container-title">Mutant</div>
           <div class="thumbnail-button-group"><a href="#" class="btn btn-small">More</a>

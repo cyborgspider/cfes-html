@@ -8,10 +8,6 @@ module.exports =function(grunt){
         options:{
           livereload: true
         },
-        js: {
-          files:   ['site/scripts/*.coffee'],
-          tasks:   ['coffee']
-        },
         css:{
           files:   ['site/less/*.less'],
           tasks:   ['less']
@@ -21,26 +17,13 @@ module.exports =function(grunt){
           tasks:   ['jade']
         }
       },
-      coffee:{
-        compile: {
-            files: {
-              'build/js/scripts.js': ['site/scripts/*.coffee'] // compile and concat into single file
-            }
-          }
-      },
-      uglify: {
-        my_target: {
-          files: {
-            'build/js/scripts.min.js': ['build/js/scripts.js']
-          }
-        }
-      },
       copy: {
         main: {
           files:[
             {expand: true,cwd: 'site/images/',src: '**',dest: 'build/img/'},
-            {expand: true, cwd: 'site/less',src: '**', dest: 'build/less/'}
-          ] 
+            {expand: true, cwd: 'site/less',src: '**', dest: 'build/less/'},
+            {expand: true, cwd: 'site/scripts',src: '**', dest: 'build/js/'}
+          ]
         },
       },
       less:{
@@ -76,6 +59,6 @@ module.exports =function(grunt){
 
      //Run the task
      //Copy is registered but not executed. Refer to commented code in the initConfig method for details on how to add it.
-     grunt.registerTask('default', ['watch','coffee', 'uglify', 'less', 'jade', 'copy']);
-     grunt.registerTask('build', ['coffee', 'uglify', 'less','jade', 'copy']);
+     grunt.registerTask('default', ['watch', 'less', 'jade', 'copy']);
+     grunt.registerTask('build', ['less','jade', 'copy']);
 };
