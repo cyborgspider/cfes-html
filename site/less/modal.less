@@ -9,10 +9,11 @@
   top:        50%;
   margin-top: -35px;
 }
-#cboxPrevious{left:0}
+#cboxPrevious{left:-80px}
 #cboxPrevious:hover{background-position:0 100%}
-#cboxNext{background-position:100% 0;right:0}
+#cboxNext{background-position:100% 0;right:-80px}
 #cboxNext:hover{background-position:100% 100%}
+#colorbox #cboxClose{right:0;top:-30px;}
 
 .modal-info{
   overflow:hidden;
@@ -25,6 +26,30 @@
   width:        536px;
   height:       355px;
 }
+.modal-image-block{
+  border:solid 1px @orange-border-hover;
+  display:block;
+  margin:auto;
+}
+.modal-image-strip{
+  overflow:hidden;
+  padding:20px 0 0;
+}
+.modal-image-tn{
+  float:       left;
+  border:      solid 1px @orange-border-default;
+  width:       118px;
+  height:      78px;
+  margin-left: 19px;
+  cursor:      pointer;
+  &:hover,&.active{
+    border-color:@orange-border-hover;
+  }
+  &:first-child{
+    margin-left:0;
+  }
+}
+
 .modal-info-details{
   & > p{
     line-height:   24px;

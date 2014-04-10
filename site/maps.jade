@@ -53,28 +53,190 @@ head(profile='http://gmpg.org/xfn/11')
             }
           );
 
-          $('[data-modal-trigger').colorbox({rel:'gal'});
-          $("[data-modal-trigger]").colorbox({inline:true, width:"980px"});
+          $('.modal-image-tn').on('click',
+            function(e){
+              e.preventDefault();
+              var bigImg = $(this).parent().siblings('.modal-image-block');
+              var imgUrl = $(this).attr('src');
+              bigImg.attr('src',imgUrl);
+              $(this).addClass('active');
+              $(this).siblings().removeClass('active');
+            }
+          );
+
+          $(".death-match[data-modal-trigger]").colorbox({rel:'death-match',inline:true, width:"540px"});
+          $(".search-destroy[data-modal-trigger]").colorbox({rel:'search-destroy',inline:true, width:"540px"});
+          $(".ghostmode[data-modal-trigger]").colorbox({rel:'ghostmode',inline:true, width:"540px"});
+          $(".elimination[data-modal-trigger]").colorbox({rel:'elimination',inline:true, width:"540px"});
+          $(".free-for-all[data-modal-trigger]").colorbox({rel:'free-for-all',inline:true, width:"540px"});
+          $(".mutation[data-modal-trigger]").colorbox({rel:'mutation',inline:true, width:"540px"});
+          $(".special[data-modal-trigger]").colorbox({rel:'special',inline:true, width:"540px"});
 
         });
   body
     #modalContent
-      #test.modal-info
-          img.modal-image(src="img/characters/character-temp.jpg", alt="Temp")
-          .modal-info-details
-              h2.modal-info-title Navy Seals
-              p.intro The Navy Seals are an elite team made up of the best the US marines has to offer. Created by US President John F. Kennedy in 1962, they have been a driving force in stopping terrorism and completing high risk missions around the world.
-              p <span class="label">Availability:</span> In-game Item Shop/Online Item Mall
-              p <span class="label">Cost:</span> 8200 ZP
-              //- p <span class="label">Mall:</span> <a href="#" class="btn btn-large">Buy Now</a>
-      #derp.modal-info
-          img.modal-image(src="img/characters/character-temp.jpg", alt="Temp")
-          .modal-info-details
-              h2.modal-info-title DERPPPPP
-              p.intro The Navy Seals are an elite team made up of the best the US marines has to offer. Created by US President John F. Kennedy in 1962, they have been a driving force in stopping terrorism and completing high risk missions around the world.
-              p <span class="label">Availability:</span> In-game Item Shop/Online Item Mall
-              p <span class="label">Cost:</span> 8200 ZP
-              //- p <span class="label">Mall:</span> <a href="#" class="btn btn-large">Buy Now</a>
+      #transport
+          img.modal-image-block(src="img/maps/map-Transport_Ship.jpg", alt="Transport Ship")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Transport_Ship.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Transport_Ship2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Transport_Ship3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Transport_Ship4.jpg",alt="")
+      #mexico
+          img.modal-image-block(src="img/maps/map-Mexico.jpg", alt="Mexico")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Mexico.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Mexico2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Mexico3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Mexico4.jpg",alt="")
+      #train
+          img.modal-image-block(src="img/maps/map-Train.jpg", alt="Train")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Train.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Train2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Train3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Train4.jpg",alt="")
+      #monaco
+          img.modal-image-block(src="img/maps/map-Monaco.jpg", alt="Monaco")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Monaco.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Monaco2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Monaco3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Monaco4.jpg",alt="")
+      #factory
+          img.modal-image-block(src="img/maps/map-Factory.jpg", alt="Factory")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Factory.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Factory2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Factory3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Factory4.jpg",alt="")
+      #egypt
+          img.modal-image-block(src="img/maps/map-Egypt.jpg", alt="Egypt")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Egypt.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Egypt2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Egypt3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Egypt4.jpg",alt="")
+      #powerplant
+          img.modal-image-block(src="img/maps/map-Power_Plant.jpg", alt="Power Plant")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Power_Plant.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Power_Plant2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Power_Plant3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Power_Plant4.jpg",alt="")
+      #arena
+          img.modal-image-block(src="img/maps/map-Arena.jpg", alt="Arena")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Arena.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Arena2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Arena3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Arena4.jpg",alt="")
+      #fortress
+          img.modal-image-block(src="img/maps/map-Fortress.jpg", alt="Transport Ship")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Fortress.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Fortress2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Fortress3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Fortress4.jpg",alt="")
+      #prison
+          img.modal-image-block(src="img/maps/map-Prison.jpg", alt="Prison")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Prison.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Prison2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Prison3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Prison4.jpg",alt="")
+      #downtown
+          img.modal-image-block(src="img/maps/map-Downtown.jpg", alt="Downtown")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Downtown.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Downtown2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Downtown3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Downtown4.jpg",alt="")
+      #alaska
+          img.modal-image-block(src="img/maps/map-Alaska.jpg", alt="Alaska")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Alaska.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Alaska2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Alaska3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Alaska4.jpg",alt="")
+      #hakenkreuz
+          img.modal-image-block(src="img/maps/map-Hakenkreuz.jpg", alt="Hakenkreuz")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Hakenkreuz.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Hakenkreuz2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Hakenkreuz3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Hakenkreuz4.jpg",alt="")
+      #metro
+          img.modal-image-block(src="img/maps/map-Metro.jpg", alt="Metro")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Metro.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Metro.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Metro.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Metro.jpg",alt="")
+      #columbia
+          img.modal-image-block(src="img/maps/map-Columbia.jpg", alt="Columbia")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Columbia.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Columbia.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Columbia.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Columbia.jpg",alt="")
+      #crossroad
+          img.modal-image-block(src="img/maps/map-Crossroad.jpg", alt="Crossroad")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Crossroad.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Crossroad.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Crossroad.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Crossroad.jpg",alt="")
+      #black-widow
+          img.modal-image-block(src="img/maps/map-Black_Widow.jpg", alt="Black_Widow")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Black_Widow.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Black_Widow.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Black_Widow.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Black_Widow.jpg",alt="")
+      #port
+          img.modal-image-block(src="img/maps/map-Port.jpg", alt="Port")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Port.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Port2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Port3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Port4.jpg",alt="")
+      #zone
+          img.modal-image-block(src="img/maps/map-Zone_13.jpg", alt="Zone_13")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Zone_13.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Zone13_2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Zone13_3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Zone13_4.jpg",alt="")
+      #excavation
+          img.modal-image-block(src="img/maps/map-Excavation.jpg", alt="Excavation")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Excavation.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Excavation2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Excavation3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Excavation4.jpg",alt="")
+      #research
+          img.modal-image-block(src="img/maps/map-Research_Facility.jpg", alt="Research_Facility")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Research_Facility.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Research_Facility2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Research_Facility3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Research_Facility4.jpg",alt="")
+      #halloween
+          img.modal-image-block(src="img/maps/map-Halloween.jpg", alt="Halloween")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Halloween.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Halloween2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Halloween3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Halloween4.jpg",alt="")
+      #christmas
+          img.modal-image-block(src="img/maps/map-Christmas.jpg", alt="Christmas")
+          .modal-image-strip
+            img.modal-image-tn.active(src="img/maps/map-Christmas.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Christmas2.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Christmas3.jpg",alt="")
+            img.modal-image-tn(src="img/maps/map-Christmas4.jpg",alt="")
+
 
 
     //-Middle content
@@ -88,8 +250,6 @@ head(profile='http://gmpg.org/xfn/11')
         a.btn.btn-long(href="#mutation") Mutation
         a.btn.btn-long(href="#special") Special
 
-
-
       ul.thumbnail-list.tab-content(data-content="death-match")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -97,70 +257,70 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Transport Ship TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#transport",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Mexico_list.jpg", alt="Mexico TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Mexico TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#mexico",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Train_list.jpg", alt="Train TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Train TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#train",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Monaco_list.jpg", alt="Monaco TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Monaco TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#monaco",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Factory_list.jpg", alt="Factory TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Factory TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#factory",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Egypt_list.jpg", alt="Egypt TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Egypt TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#egypt",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Power_Plant_list.jpg", alt="Powerplant TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Powerplant TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#powerplant",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Arena_list.jpg", alt="Arena TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Arena TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#arena",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Fortress_list.jpg", alt="Fortress TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Fortress TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#fortress",data-modal-trigger,class="death-match").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Prison_list.jpg", alt="Prison TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Prison TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#prison",data-modal-trigger,class="death-match").btn.btn-small More
 
       ul.thumbnail-list.tab-content(data-content="search-destroy",style="display:none")
         li.thumbnail-list-item
@@ -169,77 +329,77 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Downtown
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#downtown",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Transport_Ship_list.jpg", alt="Transport Ship TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Transport Ship TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#transport",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Mexico_list.jpg", alt="Mexico TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Mexico TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#mexico",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Train_list.jpg", alt="Train TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Train TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#train",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Monaco_list.jpg", alt="Monaco TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Monaco TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#monaco",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Factory_list.jpg", alt="Factory TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Factory TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#factory",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Egypt_list.jpg", alt="Egypt TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Egypt TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#egypt",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Power_Plant_list.jpg", alt="Powerplant TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Powerplant TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#powerplant",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Arena_list.jpg", alt="Arena TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Arena TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#arena",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Fortress_list.jpg", alt="Fortress TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Fortress TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#fortress",data-modal-trigger,class="search-destroy").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Prison_list.jpg", alt="Prison TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Prison TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#prison",data-modal-trigger,class="search-destroy").btn.btn-small More
       ul.thumbnail-list.tab-content(data-content="ghostmode",style="display:none")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -247,14 +407,14 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Hakenkreuz
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#hakenkreuz",data-modal-trigger,class="ghostmode").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Metro_list.jpg", alt="Metro")
             .thumbnail-text-container
                 .thumbnail-text-container-title Metro
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#metro",data-modal-trigger,class="ghostmode").btn.btn-small More
       ul.thumbnail-list.tab-content(data-content="elimination",style="display:none")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -262,35 +422,35 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Columbia
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#columbia",data-modal-trigger,class="elimination").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Crossroad_list.jpg", alt="Crossroad")
             .thumbnail-text-container
                 .thumbnail-text-container-title Crossroad
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#crossroad",data-modal-trigger,class="elimination").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Arena_list.jpg", alt="Arena TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Arena TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#arena",data-modal-trigger,class="elimination").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Alaska_list.jpg", alt="Alaska")
             .thumbnail-text-container
                 .thumbnail-text-container-title Alaska
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#alaska",data-modal-trigger,class="elimination").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Prison_list.jpg", alt="Prison TD")
             .thumbnail-text-container
                 .thumbnail-text-container-title Prison TD
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#prison",data-modal-trigger,class="elimination").btn.btn-small More
       ul.thumbnail-list.tab-content(data-content="free-for-all",style="display:none")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -298,14 +458,14 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Black Window
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#black-widow",data-modal-trigger,class="free-for-all").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Port_list.jpg", alt="Port")
             .thumbnail-text-container
                 .thumbnail-text-container-title Port
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#port",data-modal-trigger,class="free-for-all").btn.btn-small More
       ul.thumbnail-list.tab-content(data-content="mutation",style="display:none")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -313,28 +473,28 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Zone 13
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#zone",data-modal-trigger,class="mutation").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Port_list.jpg", alt="Port")
             .thumbnail-text-container
                 .thumbnail-text-container-title Port
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#port",data-modal-trigger,class="mutation").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Excavation_list.jpg", alt="Excavation")
             .thumbnail-text-container
                 .thumbnail-text-container-title Excavation
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#excavation",data-modal-trigger,class="mutation").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Research_Facility_list.jpg", alt="Research Facility")
             .thumbnail-text-container
                 .thumbnail-text-container-title Research Facility
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#research",data-modal-trigger,class="mutation").btn.btn-small More
       ul.thumbnail-list.tab-content(data-content="special",style="display:none")
         li.thumbnail-list-item
             .thumbnail-overlay
@@ -342,11 +502,11 @@ head(profile='http://gmpg.org/xfn/11')
             .thumbnail-text-container
                 .thumbnail-text-container-title Halloween
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#halloween",data-modal-trigger,class="special").btn.btn-small More
         li.thumbnail-list-item
             .thumbnail-overlay
             img.thumbnail-list-image(src="img/maps/map-Christmas_list.jpg", alt="Christmas")
             .thumbnail-text-container
                 .thumbnail-text-container-title Christmas
                 .thumbnail-button-group
-                    a(href="#").btn.btn-small More
+                    a(href="#christmas",data-modal-trigger,class="special").btn.btn-small More
