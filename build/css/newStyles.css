@@ -418,6 +418,9 @@ strong {
   float: left;
   overflow: hidden;
 }
+.tabs.mb50 {
+  margin-bottom: 50px;
+}
 .tab {
   float: left;
   height: 37px;
@@ -569,4 +572,14 @@ strong {
 }
 .right-button {
   float: right;
+}
+.table-specs th {
+  color: #e66415;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.table-specs td {
+  padding-right: 20px;
 }
